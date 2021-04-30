@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="sion.my.netmanger2">
+
+    <application>
+        <receiver
+                android:name="sion.my.netmanger2.NetStateReceiver"
+                android:label="网络监听广播接收器">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

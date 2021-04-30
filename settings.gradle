@@ -1,0 +1,5 @@
+include ':netmanger'
+include ':widget'
+include ':base'
+include ':app'
+rootProject.name = "AndroidCommont"

@@ -1,0 +1,63 @@
+ext {
+    // app 相关版本控制
+    versions = [
+            sdkMinVersion    : 23,
+            sdkCompileVersion: 30,
+            toolsBuildVersion: '30.0.2',
+            appVersionCode   : 1,
+            appVersionName   : "1.0.0"
+    ]
+
+    // 依赖相关版本控制
+    depVersion = [
+            appcompat       : "1.3.0-alpha01",
+            material        : "material:1.3.0-alpha01",
+            lifecycle       : "2.2.0",
+            constraintlayout: "1.1.3",
+            immersionbar    : "3.0.0",
+            rxjava          : "2.2.4",
+            rxandroid       : "2.1.0",
+            rxbinding       : "2.0.0",
+            rxpermissions2  : "rxpermissions:0.9.5@aar",
+            titlebar        : "6.5",
+            replugin        : "replugin-host-lib:2.3.3",
+            repluginChild   : "replugin-plugin-lib:2.3.3",
+            gson            : "2.8.6",
+            glide           : "4.11.0",
+            okhttp          : "3.8.1",
+            refresh         : "2.0.1",
+            flex            : "2.0.1",
+            adapter         : "3.8.3-beta1"
+    ]
+
+    // 依赖
+    deps = [
+            suport: [
+                    appcompat            : "androidx.appcompat:appcompat:${depVersion.appcompat}",
+                    material             : "com.google.android.material:${depVersion.material}",
+                    lifecycleRuntime     : "androidx.lifecycle:lifecycle-runtime:${depVersion.lifecycle}",
+                    lifecycleCommon      : "androidx.lifecycle:lifecycle-common-java8:${depVersion.lifecycle}",
+                    lifecycleViewmodel   : "androidx.lifecycle:lifecycle-viewmodel:${depVersion.lifecycle}",
+                    lifecycleLivedata    : "androidx.lifecycle:lifecycle-livedata:${depVersion.lifecycle}",
+                    constraintlayout     : "androidx.constraintlayout:constraintlayout:${depVersion.constraintlayout}",
+                    immersionbar         : "com.gyf.immersionbar:immersionbar:${depVersion.immersionbar}",
+                    rxjava               : "io.reactivex.rxjava2:rxjava:${depVersion.rxjava}",
+                    rxandroid            : "io.reactivex.rxjava2:rxandroid:${depVersion.rxandroid}",
+                    rxbinding            : "com.jakewharton.rxbinding2:rxbinding:${depVersion.rxbinding}",
+                    rxpermissions2       : "com.tbruyelle.rxpermissions2:${depVersion.rxpermissions2}",
+                    titlebar             : "com.hjq:titlebar:${depVersion.titlebar}",
+                    replugin             : "com.qihoo360.replugin:${depVersion.replugin}",
+                    repluginChild        : "com.qihoo360.replugin:${depVersion.repluginChild}",
+                    gson                 : "com.google.code.gson:gson:${depVersion.gson}",
+                    glide                : "com.github.bumptech.glide:glide:${depVersion.glide}",
+                    okhttp               : "com.squareup.okhttp3:okhttp:${depVersion.okhttp}",
+                    refreshHeader        : "com.scwang.smart:refresh-header-material:${depVersion.refresh}",
+                    refreshLayout        : "com.scwang.smart:refresh-layout-kernel:${depVersion.refresh}",
+                    refreshFooter        : "com.scwang.smart:refresh-footer-classics:${depVersion.refresh}",
+                    refreshFooterBall    : "com.scwang.smart:refresh-footer-ball:${depVersion.refresh}",
+                    refreshHeaderClassics: "com.scwang.smart:refresh-header-classics:${depVersion.refresh}",
+                    flex                 : "com.google.android:flexbox:${depVersion.flex}",
+                    adapter              : "com.kunminx.archi:binding-recyclerview:${depVersion.adapter}"
+            ]
+    ]
+}
